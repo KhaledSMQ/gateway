@@ -1,0 +1,11 @@
+[Unit]
+Description=set-timezone
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/timedatectl set-timezone Asia/Dubai
+ExecStop=
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
